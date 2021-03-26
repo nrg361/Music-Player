@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title id="heading">Welcome to your own music player</title>
+    <div class="container">
+        <img id="image">
+        <div class="info">
+            <p id="title">Title</p>
+            <p id="artist">Artist</p>
+        </div>
+        <div class="btns">
+
+            <div class="durt">
+                <p id="strtmin">0</p>
+                <p id="aa">:</p>
+                <p id="strtsec"></p>
+                <input type="range" onchange="setduration()" id="dur" min=0 max=100 step=1 value='0'>
+                <p id="endmin">0</p>
+                <p id="ab">:</p>
+                <p id="endsec"></p>
+            </div>
+
+                <br><br>
+                
+            <div class="inl">
+
+                <button onclick="loop()" id="loops" title="Play in loop">Loop</button>
+                <button onclick="backward()" id="backward" title="Previous"><i class="fas fa-backward"></i></button>
+                <button onclick="play()" id="playthis" title="Play/Pause"><i class="fas fa-play"></i></button>
+                <button onclick="forward()" id="forward" title="Next"><i class="fas fa-forward"></i></button>
+                <button onclick="autoplay()" id="autop" title="Play automatically"><i
+                        class="fas fa-circle-notch"></i></button>
+
+                <p id="volval">100</p>
+                <input type="range" onclick="setvolume()" id="vol" min=0 max=100 step=1 value='100'>
+                <button onclick="mute()" id="mutes" title="Mute\Unmute"><i class="fas fa-volume-mute"></i></button>
+            </div> 
+
+
+            <br><br>
+
+        </div>
+
+    </div>
+</head>
+
+<body>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>

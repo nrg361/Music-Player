@@ -1,0 +1,181 @@
+.container{
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    height: 670px;
+    width: 1000px;
+}
+body{
+    background-color: lightgreen;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#hm{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(245, 130, 16);
+}
+.btns{
+    text-align: center;
+    color: rgb(188, 240, 140);
+    height: 30px;
+    padding-bottom: 80px;
+    border: khaki;
+    border-radius: 20px;
+}
+.btns #backward:hover{
+    background-color: rgb(162, 223, 101);
+    cursor: pointer;
+}
+.btns #loops:hover{
+    background-color: rgb(162, 223, 101);
+    cursor: pointer;
+}
+.btns #autop:hover{
+    background-color: rgb(162, 223, 101);
+    cursor: pointer;
+}
+.btns #mutes:hover{
+    background-color: rgb(162, 223, 101);
+    cursor: pointer;
+}
+.btns #forward:hover{
+    background-color: rgb(162, 223, 101);
+    cursor: pointer;
+}
+.btns #playthis:hover{
+    background-color: rgb(162, 223, 101);
+    cursor: pointer;
+}
+
+.btns #backward{
+    background-color: rgb(138, 101, 223);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px red;
+    margin-right: 5px;
+}
+.btns #forward{
+    background-color: rgb(138, 101, 223);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px red;
+    margin-left: 5px;
+}
+.btns #playthis{
+    background-color: rgb(138, 101, 223);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px red;
+}
+.btns #mutes{
+    background-color: rgb(138, 101, 223);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px red;
+    font-size: large;
+    margin-left: 5px;
+}
+.btns #loops{
+    background-color: rgb(138, 101, 223);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px red;
+    font-size: medium;
+    font: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.btns #autop{
+    background-color: rgb(138, 101, 223);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px red;
+    font-size: medium;
+    font: bold;
+    margin-left: 5px;
+}
+
+
+.info{
+    text-align: center;
+    font-size: 25px;
+}
+img{
+    padding-top: 40px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    height: 45%;
+    display:block;
+}
+
+#title{
+    color: seashell;
+}
+#artist{
+    color: seashell;
+}
+
+.durt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dur{
+    width: 750px;
+}
+.inl{
+    display: inline-flex;
+    margin-left: 330px;
+    
+}
+#volval{
+    margin-left: 125px;
+}
+
+@media (max-width: 750px){
+
+.container{
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+    height: 650px;
+    width: 370px;
+}
+
+.durt #dur{
+    width: 200px;
+}
+
+.inl{
+    margin-left: 50px;
+}
+#vol{
+    display: none;
+}
+
+#mutes{
+    display: none;
+}
+
+img{
+    padding-top: 40px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    height: 50%;
+    display:block;
+}
+
+
+}
